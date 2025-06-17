@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NoJetFail – Predictive Jet Engine Maintenance</title>
+  <style>
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Inter", sans-serif; line-height: 1.6; background: #f9faff; color: #1e1e1e; }
+    a { text-decoration: none; color: inherit; }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem; background-image:url("https://www.pixelstalk.net/wp-content/uploads/2016/12/Cloudy-Sky-Background-Widecsreen.jpg"); box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      position: sticky; top: 0; background-position: bottom; background-size: cover;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+   .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: 600;
+      color: #f0f0f0;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .btn-login {
+      margin-left: 2rem;
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.8);
+      color: #0055ff;
+      border: 1px solid #fff;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-login:hover {
+      background: #fff;
+      color: #0041cc;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 4rem auto;
+      gap: 2rem;
+    }
+    .hero-text {
+      flex: 1.2;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero-text p {
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+    .btn-primary {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #0055ff;
+      color: #fff;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover {
+      background: #0041cc;
+    }
+    .hero-img {
+      flex: 1;
+      text-align: center;
+    }
+    .hero-img img {
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 4rem auto;
+    }
+    .feature-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .feature-card h3 {
+      margin-bottom: 0.75rem;
+      color: #0055ff;
+    }
+    .feature-card p {
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.875rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">NoJetFail</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="input.html">Try Demo</a>
+      <a href="results.html">Dashboard</a>
+      <a href="login.html" class="btn-login">Log In</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Predictive Maintenance for Jet Engines</h1>
+      <p>
+        Harness the power of data-driven insights to anticipate failures before they ground your fleet. No more surprise downtimes—just smooth, reliable operations.
+      </p>
+      <a class="btn-primary" href="input.html">Get an estimate for your turbine→</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.MaJENUh8Y-rEwDBSfhrE7wHaE8?r=0&rs=1&pid=ImgDetMain&cb=idpwebpc1" alt="Engine analytics illustration">
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>Real-Time RUL</h3>
+      <p>Get an up-to-the-minute read on Remaining Useful Life for each engine.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Custom Alerts</h3>
+      <p>Set thresholds on critical sensors to receive proactive maintenance notifications.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Easy Integration</h3>
+      <p>Plug into your existing telemetry and SCADA systems with minimal setup.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Advanced Modeling</h3>
+      <p>State-of-the-art ML algorithms trained on thousands of cycles of flight data.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 NoJetFail 
+  </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NoJetFail Demo – Input Features</title>
+  <style>
+    body { font-family: "Inter", sans-serif; background: #f4f6fb; color: #2c2c2c; }
+    .container {
+      max-width: 600px; margin: 3rem auto; background: #fff;
+      padding: 2rem; border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h1 { text-align: center; margin-bottom: 1.5rem; color: #0055ff; }
+    form { display: grid; gap: 1.25rem; }
+    label {
+      display: block; font-weight: 600; margin-bottom: 0.25rem;
+    }
+    input[type="number"] {
+      width: 100%; padding: 0.5rem; border: 1px solid #ccc;
+      border-radius: 0.5rem; font-size: 1rem;
+    }
+    .btn-submit {
+      margin-top: 1.5rem; width: 100%;
+      padding: 0.75rem; font-size: 1.125rem;
+      background: #0055ff; color: #fff;
+      border: none; border-radius: 0.5rem;
+      cursor: pointer; font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn-submit:hover { background: #0041cc; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Enter Engine Features</h1>
+    <form action="results.html" method="get">
+      <label for="cycle">Cycle Number</label>
+      <input type="number" id="cycle" name="cycle" required>
+
+      <label for="sm2">LPC Outlet Temperature (°R)</label>
+      <input type="number" id="sm2" name="sm2" step="any" required>
+
+      <label for="sm3">HPC Outlet Temperature (°R)</label>
+      <input type="number" id="sm3" name="sm3" step="any" required>
+
+      <label for="sm4">LPT Outlet Temperature (°R)</label>
+      <input type="number" id="sm4" name="sm4" step="any" required>
+
+      <label for="sm7">HPC Outlet Pressure (psia)</label>
+      <input type="number" id="sm7" name="sm7" step="any" required>
+
+      <label for="sm8">Physical Fan Speed (rpm)</label>
+      <input type="number" id="sm8" name="sm8" step="any" required>
+
+      <label for="sm11">HPC Outlet Static Pressure (psia)</label>
+      <input type="number" id="sm11" name="sm11" step="any" required>
+
+      <label for="sm12">Ratio Fuel Flow to Ps30 (pps/psia)</label>
+      <input type="number" id="sm12" name="sm12" step="any" required>
+
+      <label for="sm13">Corrected Fan Speed (rpm)</label>
+      <input type="number" id="sm13" name="sm13" step="any" required>
+
+      <label for="sm15">Bypass Ratio</label>
+      <input type="number" id="sm15" name="sm15" step="any" required>
+
+      <label for="sm17">Bleed Enthalpy</label>
+      <input type="number" id="sm17" name="sm17" step="any" required>
+
+      <label for="sm20">HP Turbine Cool Air Flow</label>
+      <input type="number" id="sm20" name="sm20" step="any" required>
+
+      <label for="sm21">LP Turbine Cool Air Flow</label>
+      <input type="number" id="sm21" name="sm21" step="any" required>
+
+      <button type="submit" class="btn-submit">Run Prediction</button>
+    </form>
+  </div>
+</body>
+</html>
